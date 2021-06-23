@@ -1,0 +1,613 @@
+/*
+Template:  ;
+Author: ;
+*/
+
+/*
+================================================
+[  Table of contents  ]
+================================================
+01. Common CSS
+
+*/
+
+/*======================
+    01. Common CSS
+========================*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+/*Main Menu*/
+
+#navbar {
+	
+	z-index: 6666;
+	width: 100%;
+}
+header {
+	z-index: 77777777777777;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	padding: 30px 0 0 25px;
+}
+.lgo {
+	width: 400px;
+    position:absolute;
+    top:3%;
+    left:3%;
+}
+.lgo a {
+	color: #FFFFFF;
+	text-transform: lowercase;
+	font-size: 45px;
+	text-decoration: none;
+
+}
+.lgo a:hover {
+	text-decoration: none;
+}
+nav {
+	display: flex;
+	justify-content: flex-start;
+}
+nav ul {
+    display:inline-block;
+
+
+}
+nav ul li {
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	transition: .5s;
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+nav ul li a {
+	text-align: center;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 40px;
+	text-transform: capitalize;
+}
+nav ul li a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.mean-container a.meanmenu-reveal{
+    background: black;
+    position: absolute;
+    padding: 3px 10px 15px 10px;
+   margin-top: 1px;
+    margin-right: 40px;
+}
+	.mean-container a.meanmenu-reveal span {
+		display: block;
+		background: #fff;
+		margin-top: 7px;
+		padding-top: 1px;
+	}
+@media (max-width: 1023px) {
+
+	.lgo {
+		display: none;
+	}
+	nav ul {
+		display: inline-block;
+	}
+	nav ul li {
+		padding: 0;
+		margin: 0;
+	}
+	nav ul li a {
+		font-size: 30px;
+		padding: 0;
+		margin: 0;
+	}
+}
+/*--home section----*/
+
+.homepage {
+	position: relative;
+	background: url(assets/images/Homebg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 768px;
+}
+.home-first-img {
+	position: absolute;
+	bottom: 0;
+	left: 2%;
+	z-index: 1;
+	margin-bottom: -100px;
+}
+.home-container {
+	position: absolute;
+	left: 14%;
+	top: 30%;
+}
+.home-container .second-image {
+	padding-top: 35px;
+}
+.third-image {
+	position: absolute;
+	right: 0%;
+	bottom: 0%;
+}
+.third-image img {} .cl {
+	padding: 0;
+}
+/*--Power section----*/
+
+.power-section {
+	background: url(assets/images/cat3@1X.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 768px;
+	position: relative;
+}
+.power-section-heading {
+	text-align: center;
+	position: absolute;
+	top: 45%;
+	left: 24%;
+}
+.power-section-heading h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	position: center;
+	float: right;
+	font-size: 44px;
+}
+.power-section-icon {
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	right: 2%;
+	z-index: 1;
+	margin-bottom: -100px;
+}
+/*--dani section----*/
+
+.dani-section {
+	background: url(assets/images/danibatman@1X.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 768px;
+	position: relative;
+}
+.dani-heading {
+	font-size: 50px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 61%;
+	display: flex;
+}
+
+.dani-heading h2 {
+	font-size: 90px;
+	color: #fff;
+	font-weight: 600;
+}
+
+.first-word {
+	transform: translateY(-30px);
+}
+.dani-icon {
+	position: absolute;
+	bottom: 0;
+	left: 2%;
+	z-index: 1;
+	margin-bottom: -100px;
+}
+/*--footer-section----*/
+
+.footer-section {
+	background: url(assets/images/footerbg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 768px;
+	position: relative;
+	overflow: hidden;
+}
+.footer-p {
+	width: 600px;
+	height: 152px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 7%;
+	letter-spacing: 1.3px;
+	line-height: 35px;
+}
+.social-media {
+	position: absolute;
+	right: 5%;
+	bottom: 4%;
+	display: flex;
+	justify-content: flex-start;
+}
+.social-media a {
+	height: 88px;
+	width: 88px;
+	border-radius: 50%;
+}
+.social-media a img {
+	height: 88px;
+	width: 88px;
+	border-radius: 50%;
+}
+.phone-text {
+	display: none;
+}
+
+	
+
+@media (min-width: 750px) and (max-width: 1023px) {
+header {
+		z-index: 77777777777777;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		padding: 20px 0 0 25px;
+	}
+	.homepage {
+		position: relative;
+		background: url(assets/images/Homebg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 1027px;
+	}
+	.home-container {
+		position: absolute;
+		width: clamp(240px, 80%, 1000px);
+		text-align: center;
+		position: absolute;
+		top: 41%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.home-container .first-image {
+		padding-bottom: 30px;
+	}
+	.home-container .second-image {
+		padding-right: 220px;
+	}
+	/*--Power section----*/
+	.power-section {
+		background: url(assets/images/cat3@1X.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 1028px;
+		position: relative;
+	}
+	.power-section-heading {
+		text-align: center;
+		position: absolute;
+		top: 48%;
+		left: 47%;
+	}
+	.power-section-heading h2 {
+		font-size: 55px;
+	}
+	/*--dani section----*/
+	.dani-section {
+		position: relative;
+		background: url(assets/images/danibatman@1X.png);
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 1028px;
+	}
+	.dani-heading {
+		position: absolute;
+		font-size: 50px;
+		top: 88%;
+		left: 48%;
+	}
+	/*---footer section---*/
+	.footer-section {
+		background: url(assets/images/footerbg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 1017px;
+		position: relative;
+		overflow: hidden;
+	}
+	.footer-p {
+		width: clamp(240px, 80%, 1000px);
+		text-align: center;
+		top: 90%;
+		left: 52%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: flex-start;
+	}
+	.social-media {
+		position: absolute;
+		top: 3%;
+	}
+}
+@media (min-width: 480px) and (max-width: 749px) {
+	body {
+		overflow-x: hidden;
+	}
+	header {
+		z-index: 77777777777777;
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		padding: 20px 0 0 25px;
+	}
+	.homepage {
+		position: relative;
+		background: url(assets/images/Homebg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 924px;
+		width: 100%;
+	}
+	.home-container {
+		position: absolute;
+		width: clamp(240px, 80%, 1000px);
+		text-align: center;
+		position: absolute;
+		top: 41%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.third-image img {
+		height: 432px;
+		width: 383px;
+	}
+	.home-container .first-image img {
+		height: 251px;
+		width: 348px;
+	}
+	
+	.home-container .second-image img {
+		height: 96px;
+		width: 316px;
+	}
+	/*--Power section----*/
+	.power-section {
+		height: 995px;
+		background-size: cover;
+		position: relative;
+	}
+	.power-section-heading {
+		text-align: center;
+		position: absolute;
+		left: 45%;
+	}
+	.power-section-heading h2 {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		position: center;
+		font-size: 33px;
+	}
+	/*--dani section----*/
+	.dani-section {
+		background: url(assets/images/danibatman@1X.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 925px;
+		position: relative;
+	}
+	.dani-heading {
+		font-size: 50px;
+		position: absolute;
+		text-align: center;
+		display: flex;
+		position: absolute;
+		width: clamp(240px, 80%, 1000px);
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	/*--footer section----*/
+	.footer-section {
+		background: url(assets/images/footerbg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 925px;
+		background-position: center center;
+	}
+	.footer-p {
+		width: clamp(240px, 80%, 1000px);
+		text-align: center;
+		top: 90%;
+		left: 52%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: flex-start;
+	}
+	.social-media {
+		position: absolute;
+		top: 1%;
+		width: 100%;
+	}
+	.social-media .first-a {
+		position: absolute;
+		right: 3%;
+	}
+	.social-media .second-a {
+		left: 13%;
+		position: absolute;
+	}
+	.footer-p {
+		display: none;
+	}
+	.phone-text {
+		position: absolute;
+		top: 93%;
+		text-align: center;
+		letter-spacing: 6px;
+		width: 100%;
+	}
+	.phone-text h2 {
+		color: #fff;
+		font-size: 34px;
+		font-weight: bold;
+	}
+	.home-first-img,
+	.power-section-icon,
+	.dani-icon {
+		display: none;
+	}
+	.phone-text {
+		display: block;
+	}
+}
+@media (max-width: 479px) {
+	body {
+		overflow-x: hidden;
+	}
+	.homepage {
+		position: relative;
+		background: url(assets/images/Homebg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 925px;
+		width: 100%;
+	}
+	.home-container {
+		position: absolute;
+		width: clamp(240px, 80%, 1000px);
+		text-align: center;
+		position: absolute;
+		top: 31%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.third-image img {
+		height: 432px;
+		width: 383px;
+	}
+	.home-container .first-image img {
+		height: 151px;
+		width: 248px;
+	}
+	
+	.home-container .second-image img {
+		height: 66px;
+		width: 216px;
+	}
+	/*--Power section----*/
+	.power-section {
+		height: 924px;
+		background-size: cover;
+		position: relative;
+	}
+	.power-section-heading {
+		text-align: center;
+		position: absolute;
+		left: 45%;
+	}
+	.power-section-heading h2 {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+		position: center;
+		font-size: 33px;
+	}
+	/*--dani section----*/
+	.dani-section {
+		background: url(assets/images/danibatman@1X.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 925px;
+		position: relative;
+	}
+	.dani-heading {
+		font-size: 40px;
+		position: absolute;
+		text-align: center;
+		display:flex;
+		
+		top: 90%;
+		left:20%;
+		
+       
+        width:100%;
+	}
+    .dani-heading h2{
+        font-size: 50px;
+    }
+	/*--footer section----*/
+	.footer-section {
+		background: url(assets/images/footerbg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 925px;
+		background-position: center center;
+	}
+	.footer-p {
+		width: clamp(240px, 80%, 1000px);
+		text-align: center;
+		top: 80%;
+		width:100%;
+		transform: translate(-50%, -50%);
+	
+	}
+	.social-media {
+		position: absolute;
+		top: 1%;
+		width: 100%;
+	}
+	.social-media .first-a {
+		position: absolute;
+		right: 3%;
+	}
+	.social-media .second-a {
+		left: 13%;
+		position: absolute;
+	}
+	.footer-p {
+		display: none;
+	}
+	.phone-text {
+		position: absolute;
+		top: 84%;
+		text-align: center;
+		letter-spacing: 6px;
+		width: 100%;
+        display: block;
+	}
+	.phone-text h2 {
+		color: #fff;
+		font-size: 34px;
+		font-weight: bold;
+	}
+	.home-first-img,
+	.power-section-icon,
+	.dani-icon {
+		display: none;
+	}
+	.phone-text {
+		
+	}
+}
